@@ -33,15 +33,11 @@ Toda la información se almacena en una base de datos MySQL llamada skyroute.
 La conexión a la base de datos está centralizada en Config_DB.py.
 Las operaciones CRUD (crear, leer, actualizar, eliminar) para clientes y destinos están separadas en módulos específicos.
 Resumen de tablas de la base de datos
-clientes:
+clientes: id, razon_social, cuit, email
+destinos: id, ciudad, pais, costo
+ventas: id, cliente, destino, fecha, costo, estado
 
-id, razon_social, cuit, email
-destinos:
 
-id, ciudad, pais, costo
-ventas:
-
-id, cliente, destino, fecha, costo, estado
 Observaciones
 El sistema está pensado para ejecutarse en consola.
 Los datos se almacenan en MySQL, no en memoria.
